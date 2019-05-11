@@ -5,26 +5,186 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Refresh" content="0;url=coming_soon.html">
+  <!-- <meta http-equiv="Refresh" content="0;url=coming_soon.html"> -->
 
-  <title>Projects</title>
+  <title>Home</title>
 
   <!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:700,900" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="Assets/stylesheets/main.css">
+  <link rel="stylesheet" href="Assets/stylesheets/media-queries.css">
 </head>
 <body>
   <header>
+    <a class="header-box" href="index.html">
+     <div>
+       <img class="logo" src="Assets/Images/logo.png" alt="Blockbuster Theatres">
+       <!-- <h1 class="header-text">Nathan Doherty</h1> -->
+     </div>
+    </a>
 
+    <div href="#" class="hamburger" onClick="hamburger">
+     <div class="line"></div>
+     <div class="line"></div>
+     <div class="line"></div>
+    </div>
+
+    <nav class="nav primary-nav">
+      <ul class="menu">
+        <li><a href ="index.html">Home</a></li>
+        <li><a href ="projects.html">Projects</a></li>
+        <li><a href ="contact.html">Contact</a></li>
+        <li><a href ="about.html">About</a></li>
+      </ul>
+    </nav>
+    <script src="Assets/js/scripts.js"></script>
   </header>
 
-  <section>
-
+  <section class="First">
+    <div id="Java">
+      <h1>Java</h1>
+      <div class="project_text">
+        <h2>[Insert Project Name]</h2>
+        <p>[Description of Project]</p>
+      </div><div class="project">
+        <img src="Assets/Images/index_image.jpg" alt="Project Name">
+      </div>
+      <hr width="80%">
+      <div class="project_text">
+        <h2>[Insert Project Name]</h2>
+        <p>[Description of Project]</p>
+      </div><div class="project">
+        <img src="Assets/Images/index_image.jpg" alt="Project Name">
+      </div>
+      <hr width="80%">
+      <div class="project_text">
+        <h2>[Insert Project Name]</h2>
+        <p>[Description of Project]</p>
+      </div><div class="project">
+        <img src="Assets/Images/index_image.jpg" alt="Project Name">
+      </div>
+      <hr width="80%">
+      <hr>
+    </div>
+    <div id="C#">
+      <h1>C#</h1>
+      <div class="project_text">
+        <h2>[Insert Project Name]</h2>
+        <p>[Description of Project]</p>
+      </div><div class="project">
+        <img src="Assets/Images/index_image.jpg" alt="Project Name">
+      </div>
+      <hr width="80%">
+      <div class="project_text">
+        <h2>[Insert Project Name]</h2>
+        <p>[Description of Project]</p>
+      </div><div class="project">
+        <img src="Assets/Images/index_image.jpg" alt="Project Name">
+      </div>
+      <hr width="80%">
+      <hr>
+    </div>
+    <div id="C++">
+      <h1>C++</h1>
+      <div class="project_text">
+        <h2>[Insert Project Name]</h2>
+        <p>[Description of Project]</p>
+      </div><div class="project">
+        <img src="Assets/Images/index_image.jpg" alt="Project Name">
+      </div>
+      <hr width="80%">
+      <div class="project_text">
+        <h2>[Insert Project Name]</h2>
+        <p>[Description of Project]</p>
+      </div><div class="project">
+        <img src="Assets/Images/index_image.jpg" alt="Project Name">
+      </div>
+      <hr width="80%">
+      <hr>
+    </div>
+    <div id="Web Development">
+      <h1>Web Development</h1>
+      <div class="project_text">
+        <h2>[Insert Project Name]</h2>
+        <p>[Description of Project]</p>
+      </div><div class="project">
+        <img src="Assets/Images/index_image.jpg" alt="Project Name">
+      </div>
+      <hr width="80%">
+      <div class="project_text">
+        <h2>[Insert Project Name]</h2>
+        <p>[Description of Project]</p>
+      </div><div class="project">
+        <img src="Assets/Images/index_image.jpg" alt="Project Name">
+      </div>
+      <hr width="80%">
+      <hr>
+    </div>
   </section>
 
-  <footer>
 
-  </footer>
-</body>
+    <footer>
+      <small>&copy; Nathan Doherty</small>
+  		<nav class="nav secondary-nav">
+  			<ul>
+          <li><a href ="index.html">Home</a></li>
+          <li><a href ="projects.html">Projects</a></li>
+          <li><a href ="contact.html">Contact Us</a></li>
+          <li><a href ="about.html">About</a></li>
+  			</ul>
+  		</nav>
+    </footer>
+  </body>
 
-</html>
+  </html>
+
+  <!--Scripts-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="Assets/bootstrap/js/bootstrap.js"></script>
+
+  <script>
+  $('.hamburger').on('click', function()
+  {
+  	"use strict";
+
+  	$('.menu').toggleClass('open');
+  	$('.line').toggleClass('transition');
+  	$('.ham-overlay').toggleClass('show');
+  	$('body').toggleClass('noScroll');
+  });
+
+  $('.ham-overlay').on('click', function()
+  {
+  	"use strict";
+  	$('.menu').removeClass('open');
+  	$('.line').removeClass('transition');
+  	$('.ham-overlay').removeClass('show');
+  	$('body').removeClass('noScroll');
+
+  });
+
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  		document.getElementById("arrow").style.opacity = 1;
+          document.getElementById("back-to-top").style.opacity = 1;
+  		document.getElementById("back-to-top").style.visibility = "visible";
+
+      } else {
+  		document.getElementById("arrow").style.opacity = 0;
+  		document.getElementById("back-to-top").style.opacity = 0;
+  		document.getElementById("back-to-top").style.visibility = "hidden";
+
+
+      }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+  }
+
+  </script>

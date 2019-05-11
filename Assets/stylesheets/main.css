@@ -84,6 +84,27 @@ h2{
 }
 section{
   margin:5px 5px 5px 5px;
+
+}
+.First{
+	margin-top: 85px;
+}
+.project{
+	float: right;
+	width: 48%;
+}
+.project img{
+	width:100%;
+}
+.project_text{
+	width:50%;
+	float:left;
+}
+
+section a{
+
+  color:#000;
+  line-height: 2;
 }
 small{
 	color:#fff;
@@ -104,7 +125,42 @@ small{
     text-align: center;
     color: #fff;
 }
+/*
+========================================
+Favicons
+========================================
+*/
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
 
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Linkedin */
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-github {
+  background: black;
+  color: white;
+}
 /*
 ========================================
 Header
@@ -119,7 +175,7 @@ header{
 	padding-left: 10px;
 	padding-right: 10px;
 	box-sizing: border-box;
-	margin-bottom:80px;
+	margin-bottom:85px;
 	z-index: 5;
 }
 .primary-nav{
@@ -284,7 +340,8 @@ Columns
 */
 .col-1-2{
 	float:left;
-	width: 48%
+	width: 48%;
+	padding-top: 85px;
 }
 
 .col-2-2{
